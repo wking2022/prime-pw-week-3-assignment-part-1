@@ -103,14 +103,15 @@ console.log('Return removed name:', getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-// function find( value, array ){
-//   for (i=0; i<array.length; i++){
-//     if (value === array[i]){
-//       return 'true';
-//     } return 'false';
-//   }
+let array = [2, 45, 6, 78, 82, 1]
+function find( value, array ){
+  for (i=0; i<array.length; i++){
+    if (value === array[i]){
+      return 'true';
+    } return 'false';
+  }
 
-// console.log('Displaying something of some kind of value', find(1, [2, 0, 7, 3, 1]))
+console.log('Displaying something of some kind of value', find('1', array));
 
 // {
 //   let valueOF = [];
@@ -130,7 +131,6 @@ console.log('Return removed name:', getLast());
 //    string. Return true if it is, and false otherwise
 
 let string = 'Mississippi'
-
 function isFirstLetter(letter, string){
   for (let i=0; i<string.length; i++){
     if ( letter === string[i] ){
@@ -141,22 +141,22 @@ function isFirstLetter(letter, string){
 
 console.log('Something, something, something', isFirstLetter('i', string));
 
-// console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-// console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
-// // 9. Function to return the sum of all numbers in an array
-// function sumAll( ) {
-//   let sum = 0
-//   // TODO: loop to add items
-//   return sum;
-// }
+// 9. Function to return the sum of all numbers in an array
+function sumAll( ) {
+  let sum = 0
+  // TODO: loop to add items
+  return sum;
+}
 
-// // 10. Function to return a new array of all positive (greater than zero)
-// //     numbers contained in an input array. If there are no positive numbers
-// //     return an empty array. Note: The input array should not change.
+// 10. Function to return a new array of all positive (greater than zero)
+//     numbers contained in an input array. If there are no positive numbers
+//     return an empty array. Note: The input array should not change.
 
 
 
-// // 11. Pick a problem from Edabit(https://edabit.com/) or 
-// //     CodeWars(https://www.codewars.com/). Then describe it 
-// //     here in a comment, write the function, and test it!
+// 11. Pick a problem from Edabit(https://edabit.com/) or 
+//     CodeWars(https://www.codewars.com/). Then describe it 
+//     here in a comment, write the function, and test it!
