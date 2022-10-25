@@ -1,26 +1,27 @@
 // console.log('***** Function Practice *****')
+
 // ---------- PRACTICE SECTION ----------
 
-function longDay(){
-  return 'Pimpin aint easy'
-}
-console.log('A Wise Man once told me,"', longDay(), 'young man."');
+// function longDay(){
+//   return 'Pimpin aint easy'
+// }
+// console.log('A Wise Man once told me,"', longDay(), 'young man."');
 
 
-function thinkingHard(){
-  console.log( 'blessed to figure out a way to figure it out.' );
-  return 'YouAllReadyKnow';
-}
-console.log(thinkingHard());
+// function thinkingHard(){
+//   console.log( 'blessed to figure out a way to figure it out.' );
+//   return 'YouAllReadyKnow';
+// }
+// console.log(thinkingHard());
 
 
-function janeKurt(number, number0, number1){
-  console.log('just an example of what it does', number, number0, 'and', number1 );
-  let bigMoney = number * number0 + number1;
-  return bigMoney;
-}
+// function janeKurt(number, number0, number1){
+//   console.log('just an example of what it does', number, number0, 'and', number1 );
+//   let bigMoney = number * number0 + number1;
+//   return bigMoney;
+// }
 
-console.log('just me giving an example of the answer', janeKurt(2, 243, 9));
+// console.log('just me giving an example of the answer', janeKurt(2, 243, 9));
 
 
 // ---------- PRACTICE SECTION END ----------
@@ -40,12 +41,12 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 
-function helloName(){
-  return 'Hello Stacy';
+function helloName( name ){
+  return name;
 }
 
 // Remember to call the function to test
-console.log("I'm saying", helloName());
+console.log("I'm saying", helloName('Stacy'));
 
 // ---------- PRACTICE SECTION----------
 
@@ -86,9 +87,9 @@ function isPositive( number ) {
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'isPositive - should say true:', isPositive(3) );
+console.log( 'isPositive - should say false:', isPositive(0) );
+console.log( 'isPositive - should say false:', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
@@ -103,26 +104,15 @@ console.log('Return removed name:', getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-let array = [2, 45, 6, 78, 82, 1]
 function find( value, array ){
   for (i=0; i<array.length; i++){
     if (value === array[i]){
       return 'true';
-    } return 'false';
-  }
+    }
+  }   return 'false';
+}
 
-console.log('Displaying something of some kind of value', find('1', array));
-
-// {
-//   let valueOF = [];
-//   for (let i=0; i<valueOF.length; i++);
-//   if (valueOF> 0){
-//     return 'True';
-//   } else {
-//     return 'False';
-//   }
-// }
-// console.log('Someting in the lines of', find());
+console.log('Display true or false:', find(5, [2, 66, 35, 47, 567, 1]));
 
 // ----------------------
 // Stretch Goals
@@ -130,26 +120,33 @@ console.log('Displaying something of some kind of value', find('1', array));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 
-let string = 'Mississippi'
-function isFirstLetter(letter, string){
+function isFirstLetter( letter, string ){
   for (let i=0; i<string.length; i++){
     if ( letter === string[i] ){
-      return 'true'
-    } return 'false'
-  } 
+      return 'true';
+    } return 'false';
+  }   
 }
 
-console.log('Something, something, something', isFirstLetter('i', string));
-
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+console.log( 'isFirstLetter - should say true or false:', isFirstLetter('a', 'apple') );
+console.log( 'isFirstLetter - should say true or false:', isFirstLetter('a', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
-}
+
+
+// function sumAll( array ) {
+//   let sumOfAll = [0, 89, 7, 87];
+//   for (let i=0; i<array.length; i++){
+//     return sumOfAll;
+//   }
+// }
+// console.log(sumAll([1, 4, 5, 65, 46, 456, 56] + array));
+
+
+// function sumAll( sum ) {
+//   let sum = 0
+//   // TODO: loop to add items
+//   return sum;
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
